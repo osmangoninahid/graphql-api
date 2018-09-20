@@ -1,0 +1,42 @@
+{
+  "name": "gqlapi",
+  "version": "1.0.0",
+  "description": "APIs with NodeJS, ExpressJS, GraphQL, MongoDB",
+  "main": "bin/www",
+  "scripts": {
+    "start": "nodemon --exec babel-node ./bin/www",
+    "dev": "DEBUG=api-server:* npm run start",
+    "debug": "DEBUG=api-server:* npm run start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["NodeJS", "ExpressJS", "GraphQL", "MongoDB"],
+  "author": "Osman Goni Nahid <nirobshitol@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "app-module-path": "^2.2.0",
+    "body-parser": "^1.18.3",
+    "chalk": "^2.4.1",
+    "colors": "^1.3.2",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.4",
+    "debug": "^4.0.1",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "graphql": "^0.13.2",
+    "graphql-tools": "^3.1.1",
+    "mongoose": "^5.2.15",
+    "mongoose-unique-validator": "^2.0.1",
+    "morgan": "^1.9.1",
+    "slug": "^0.9.1",
+    "winston": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "nodemon": "^1.18.4"
+  }
+}
